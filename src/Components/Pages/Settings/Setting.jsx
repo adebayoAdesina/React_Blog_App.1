@@ -16,7 +16,7 @@ const Setting = () => {
                     <div className="settingsPP">
                         <img src={ProfileIcon} alt="" />
                         <label htmlFor="fileInput">
-                            <img src={ProfileIcon} alt="" className="settingsPPICon" />
+                            <img src={ProfileIcon} alt="" className="settingsPPIcon" />
                         </label>
                         <input type="file" id='fileInput' style={{display: 'none'}}/>
                     </div>
