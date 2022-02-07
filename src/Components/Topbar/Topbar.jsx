@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import './Topbar.css'
 
 import TopbarImage from '../../assets/adebayo_adesina.png';
@@ -9,6 +9,23 @@ import { Link } from 'react-router-dom';
 
 const Topbar = () => {
     const user = false;
+
+    const [width, setWindowWidth] = useState(0);
+    
+    const updateDimensions = () => {
+        const width = window.innerWidth;
+        setWindowWidth({size: width});
+    }
+
+    useEffect(() => { 
+        updateDimensions();
+
+        window.addEventListener("resize", updateDimensions);
+        return () => 
+        window.removeEventListener("resize",updateDimensions);
+       
+    }, [])
+    console.log(width)
     return (
         <div className='topbar'>
             <div className='topLeft'>
