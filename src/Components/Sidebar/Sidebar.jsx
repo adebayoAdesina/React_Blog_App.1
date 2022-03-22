@@ -6,7 +6,7 @@ import GithubLogo from '../../assets/icons8_GitHub_50px.png'
 import LinkedInLogo from '../../assets/icons8_LinkedIn_52px.png'
 
 const Sidebar = () => {
-    const user = false;
+    //const user = false;
     return (
         <div className='sidebar'>
             <div className="sidebarItem">
